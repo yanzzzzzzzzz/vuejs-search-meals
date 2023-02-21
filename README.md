@@ -9,3 +9,5 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Reference
 
 [Built Complete Vue 3/Vuex application in 3 hours](https://www.youtube.com/watch?v=cfiN8lCA3RM&ab_channel=TheCodeholic)
+
+[Meals api](https://www.themealdb.com/api.php)
