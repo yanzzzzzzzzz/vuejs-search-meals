@@ -26,12 +26,7 @@
         <h3 class="font-semibold">{{ meal.strMeal }}</h3>
         <p class="mb-4">sad asd wadd wqx vx cxv eatwera we wa</p>
         <div class="flex items-center justify-between">
-          <a
-            :href="meal.strYoutube"
-            target="_blank"
-            class="px-3 py-2 rounded border-2 text-white border-red-600 bg-red-500 hover:bg-red-600 transition-colors"
-            >Youtube</a
-          >
+          <YTButton :href="meal.strYoutube">Youtube</YTButton>
         </div>
       </div>
     </div>
@@ -41,6 +36,7 @@
 import store from "../store";
 import { ref } from "vue";
 import { computed } from "@vue/reactivity";
+import YTButton from "../components/YTButton.vue";
 const keyword = ref("");
 const meals = computed(() => store.state.searchedMeals);
 function searchMeals() {
