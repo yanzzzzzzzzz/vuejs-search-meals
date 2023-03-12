@@ -19,7 +19,7 @@
           <template
             v-for="(el, ind) of Array.from({ length: 20 }, (_, i) => i + 1)"
           >
-            <li v-if="meal && meal[`strIngredient${ind}`]">
+            <li v-if="meal && meal[`strIngredient${ind}`]" :key="ind">
               {{ ind }}.{{ meal[`strIngredient${ind}`] }}
             </li>
           </template>
@@ -31,7 +31,7 @@
           <template
             v-for="(el, ind) of Array.from({ length: 20 }, (_, i) => i + 1)"
           >
-            <li v-if="meal && meal[`strIngredient${ind}`]">
+            <li v-if="meal && meal[`strIngredient${ind}`]" :key="ind">
               {{ ind }}.{{ meal[`strMeasure${ind}`] }}
             </li>
           </template>
