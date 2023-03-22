@@ -4,7 +4,7 @@
     <router-link
       :to="{
         name: 'byIngredient',
-        param: { ingredient: ingredient.idIngredient },
+        params: { ingredient: ingredient.strIngredient },
       }"
       v-for="ingredient of ingredients"
       :key="ingredient.id"
