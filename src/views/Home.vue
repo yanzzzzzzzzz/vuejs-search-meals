@@ -1,7 +1,5 @@
 <template>
-  <div class="flex flex-col p-8">
-    <div class="flex justify-center gap-2 mt-2"></div>
-  </div>
+  <div class="flex flex-col p-8">Random Meals</div>
 </template>
 
 <script setup>
